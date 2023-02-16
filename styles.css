@@ -1,0 +1,91 @@
+:root {
+    --main-text-color: #3f3f3f;
+  }
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: none;
+    cursor: none;
+}
+
+
+body{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: var(--main-text-color);
+    background-color: #fafafa;
+}
+
+section{
+    height: 100vh;
+}
+
+/* CURSOR SECTION */
+
+#cursor{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--main-text-color);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    transition: all 0.1s ease;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+    padding: 5px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-links, .left-links {
+    display: inline-block;
+}
+
+.left-links a{
+   padding-right: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    font-size: small;
+    transition: all 0.2s ease;
+}
+
+nav a:hover{
+    font-size: medium;
+}
+
+/* MAIN FIRST PAGE SECTION */
+
+.large-section{
+    padding: 4rem;
+}
+
+.main-text-div{
+    padding: 4rem 0;
+}
+
+.main-header-text{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 6rem;
+}
+
+.main-header-paragraph{
+    padding: 2rem 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+}
+
